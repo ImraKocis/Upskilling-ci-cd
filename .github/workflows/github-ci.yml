@@ -15,6 +15,6 @@ jobs:
         run: |
           docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
       - name: build docker image
-        run: docker build . -t imra24/upskilling-ci-cd:first
+        run: docker build . -t imra24/upskilling-ci-cd:latest
       - name: Docker Push
         run: docker push imra24/upskilling-ci-cd
